@@ -1,0 +1,66 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T13:23:50.062Z",
+  "summary": "The diff implements most requirements well: frontend components (Hero, Menu, About, Contact, Footer, Navigation, SectionDivider), backend Motoko actor, styling, and typography. However, the backend actor is missing pre-seeded data (REQ-3 AC), the Motoko actor lacks a grouped-by-category query (REQ-3 AC), and the generated image assets are referenced but not actually present in the diff (REQ-8). The hero CTA uses 'Explore Our Menu' instead of the specified 'View Menu', which is a minor deviation.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "All data is pre-seeded with realistic Indian Garden Chicago content; backend exposes a query to retrieve all menu items grouped by category",
+      "reason": "The backend/main.mo actor defines empty data structures (Map.empty, null restaurantInfo, empty specialties) with no pre-seeded menu items, restaurant info, or specialties. There is no initialization logic or stable pre-populated data. Additionally, getMenuItems() returns a flat array, not grouped by category as required by the AC.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "requirement": "Generate static image assets (mandala hero background, food spread banner, restaurant ambiance illustration, restaurant logo) and place them in frontend/public/assets/generated",
+      "reason": "The diff shows no added files under frontend/public/assets/generated/. The components reference image paths like /assets/generated/hero-mandala-bg.dim_1920x1080.png, /assets/generated/food-spread-banner.dim_1400x600.png, /assets/generated/restaurant-ambiance.dim_1200x800.png, and /assets/generated/restaurant-logo.dim_300x300.png, but none of these image files appear in the diff summary.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Footer.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Email/Mail contact info card displayed in the Contact section with a Mail icon",
+      "reason": "The build request only specifies address, phone, operating hours, and Google Maps embed for the Contact section. An email field was not requested.",
+      "evidence": [
+        "frontend/src/components/Contact.tsx"
+      ]
+    },
+    {
+      "description": "caffeine.ai attribution with UTM tracking in the Footer",
+      "reason": "The build request does not mention any caffeine.ai branding or attribution. This was added without being requested.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/About.tsx",
+    "frontend/src/components/Contact.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/Menu.tsx",
+    "frontend/src/components/MenuItemCard.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/SectionDivider.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

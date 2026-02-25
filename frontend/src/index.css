@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Lato:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+
+    /* Indian Garden Color Palette - OKLCH */
+    /* Saffron: vibrant orange-yellow */
+    --saffron: 0.72 0.18 55;
+    /* Gold: warm turmeric gold */
+    --gold: 0.75 0.14 75;
+    /* Crimson: deep Indian red */
+    --crimson: 0.38 0.14 22;
+    /* Ivory: warm off-white */
+    --ivory: 0.98 0.01 90;
+    /* Warm cream: slightly deeper ivory */
+    --warm-cream: 0.96 0.015 80;
+    /* Warm gray: muted text */
+    --warm-gray: 0.45 0.02 50;
+
+    /* Semantic tokens mapped to Indian palette */
+    --background: 0.98 0.01 90;
+    --foreground: 0.25 0.04 30;
+    --card: 1 0 0;
+    --card-foreground: 0.25 0.04 30;
+    --popover: 1 0 0;
+    --popover-foreground: 0.25 0.04 30;
+    --primary: 0.38 0.14 22;
+    --primary-foreground: 0.98 0.01 90;
+    --secondary: 0.96 0.015 80;
+    --secondary-foreground: 0.38 0.14 22;
+    --muted: 0.94 0.01 80;
+    --muted-foreground: 0.55 0.02 50;
+    --accent: 0.75 0.14 75;
+    --accent-foreground: 0.38 0.14 22;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.03 75;
+    --input: 0.88 0.03 75;
+    --ring: 0.72 0.18 55;
+    --chart-1: 0.72 0.18 55;
+    --chart-2: 0.75 0.14 75;
+    --chart-3: 0.38 0.14 22;
+    --chart-4: 0.65 0.12 60;
+    --chart-5: 0.55 0.10 40;
+    --sidebar: 0.38 0.14 22;
+    --sidebar-foreground: 0.98 0.01 90;
+    --sidebar-primary: 0.75 0.14 75;
+    --sidebar-primary-foreground: 0.38 0.14 22;
+    --sidebar-accent: 0.45 0.12 22;
+    --sidebar-accent-foreground: 0.98 0.01 90;
+    --sidebar-border: 0.45 0.10 22;
+    --sidebar-ring: 0.72 0.18 55;
+  }
+
+  .dark {
+    --background: 0.18 0.04 25;
+    --foreground: 0.96 0.01 80;
+    --card: 0.22 0.05 25;
+    --card-foreground: 0.96 0.01 80;
+    --popover: 0.22 0.05 25;
+    --popover-foreground: 0.96 0.01 80;
+    --primary: 0.75 0.14 75;
+    --primary-foreground: 0.22 0.05 25;
+    --secondary: 0.28 0.06 25;
+    --secondary-foreground: 0.96 0.01 80;
+    --muted: 0.28 0.06 25;
+    --muted-foreground: 0.65 0.03 50;
+    --accent: 0.72 0.18 55;
+    --accent-foreground: 0.22 0.05 25;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.22 0.05 25;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.18 55;
+    --sidebar: 0.22 0.05 25;
+    --sidebar-foreground: 0.96 0.01 80;
+    --sidebar-primary: 0.75 0.14 75;
+    --sidebar-primary-foreground: 0.22 0.05 25;
+    --sidebar-accent: 0.28 0.06 25;
+    --sidebar-accent-foreground: 0.96 0.01 80;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.18 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .text-saffron {
+    color: oklch(var(--saffron));
+  }
+
+  .text-gold {
+    color: oklch(var(--gold));
+  }
+
+  .text-crimson {
+    color: oklch(var(--crimson));
+  }
+
+  .text-ivory {
+    color: oklch(var(--ivory));
+  }
+
+  .text-warm-gray {
+    color: oklch(var(--warm-gray));
+  }
+
+  .bg-saffron {
+    background-color: oklch(var(--saffron));
+  }
+
+  .bg-gold {
+    background-color: oklch(var(--gold));
+  }
+
+  .bg-crimson {
+    background-color: oklch(var(--crimson));
+  }
+
+  .bg-ivory {
+    background-color: oklch(var(--ivory));
+  }
+
+  .bg-warm-cream {
+    background-color: oklch(var(--warm-cream));
+  }
+
+  .border-gold {
+    border-color: oklch(var(--gold));
+  }
+
+  .border-crimson {
+    border-color: oklch(var(--crimson));
+  }
+
+  .border-saffron {
+    border-color: oklch(var(--saffron));
+  }
+
+  /* Opacity variants */
+  .bg-crimson\/10 { background-color: oklch(var(--crimson) / 0.10); }
+  .bg-crimson\/20 { background-color: oklch(var(--crimson) / 0.20); }
+  .bg-crimson\/50 { background-color: oklch(var(--crimson) / 0.50); }
+  .bg-crimson\/70 { background-color: oklch(var(--crimson) / 0.70); }
+  .bg-crimson\/80 { background-color: oklch(var(--crimson) / 0.80); }
+  .bg-crimson\/95 { background-color: oklch(var(--crimson) / 0.95); }
+  .bg-crimson\/98 { background-color: oklch(var(--crimson) / 0.98); }
+  .bg-gold\/20 { background-color: oklch(var(--gold) / 0.20); }
+  .bg-white\/5 { background-color: rgb(255 255 255 / 0.05); }
+  .bg-white\/60 { background-color: rgb(255 255 255 / 0.60); }
+
+  .text-crimson\/40 { color: oklch(var(--crimson) / 0.40); }
+  .text-ivory\/50 { color: oklch(var(--ivory) / 0.50); }
+  .text-ivory\/60 { color: oklch(var(--ivory) / 0.60); }
+  .text-ivory\/70 { color: oklch(var(--ivory) / 0.70); }
+  .text-ivory\/80 { color: oklch(var(--ivory) / 0.80); }
+  .text-ivory\/90 { color: oklch(var(--ivory) / 0.90); }
+  .text-warm-gray\/60 { color: oklch(var(--warm-gray) / 0.60); }
+  .text-gold\/90 { color: oklch(var(--gold) / 0.90); }
+
+  .border-gold\/10 { border-color: oklch(var(--gold) / 0.10); }
+  .border-gold\/15 { border-color: oklch(var(--gold) / 0.15); }
+  .border-gold\/20 { border-color: oklch(var(--gold) / 0.20); }
+  .border-gold\/30 { border-color: oklch(var(--gold) / 0.30); }
+  .border-gold\/40 { border-color: oklch(var(--gold) / 0.40); }
+  .border-gold\/50 { border-color: oklch(var(--gold) / 0.50); }
+  .border-gold\/60 { border-color: oklch(var(--gold) / 0.60); }
+  .border-crimson { border-color: oklch(var(--crimson)); }
+  .border-ivory\/60 { border-color: oklch(var(--ivory) / 0.60); }
+  .border-gold\/15 { border-color: oklch(var(--gold) / 0.15); }
+
+  .shadow-gold\/10 { --tw-shadow-color: oklch(var(--gold) / 0.10); }
+  .shadow-gold\/30 { --tw-shadow-color: oklch(var(--gold) / 0.30); }
+  .shadow-saffron\/40 { --tw-shadow-color: oklch(var(--saffron) / 0.40); }
+  .shadow-crimson\/20 { --tw-shadow-color: oklch(var(--crimson) / 0.20); }
+
+  .hover\:bg-saffron:hover { background-color: oklch(var(--saffron)); }
+  .hover\:text-gold:hover { color: oklch(var(--gold)); }
+  .hover\:text-saffron:hover { color: oklch(var(--saffron)); }
+  .hover\:text-crimson:hover { color: oklch(var(--crimson)); }
+  .hover\:border-gold:hover { border-color: oklch(var(--gold)); }
+  .hover\:border-gold\/50:hover { border-color: oklch(var(--gold) / 0.50); }
+  .hover\:border-gold\/60:hover { border-color: oklch(var(--gold) / 0.60); }
+  .hover\:shadow-md:hover { box-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1)); }
+  .hover\:shadow-saffron\/40:hover { --tw-shadow-color: oklch(var(--saffron) / 0.40); }
+  .hover\:shadow-gold\/10:hover { --tw-shadow-color: oklch(var(--gold) / 0.10); }
+  .hover\:bg-white\/5:hover { background-color: rgb(255 255 255 / 0.05); }
+  .hover\:bg-gold:hover { background-color: oklch(var(--gold)); }
+  .hover\:-translate-y-0\.5:hover { transform: translateY(-0.125rem); }
+}

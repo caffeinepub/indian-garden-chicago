@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Revamp the Indian Garden Chicago restaurant website (http://www.indiangardenchicago.com/) into a modern, visually stunning Indian-themed React website featuring rich cultural aesthetics, menu showcase, restaurant info, and warm modern design inspired by Indian art and colors.",
+  "architectural_notes": [
+    "Built with React",
+    "Inspired by existing site: http://www.indiangardenchicago.com/"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Ornate golden mandala pattern on a deep saffron-to-crimson gradient background, suitable for a full-screen hero section (hero-mandala-bg.dim_1920x1080.png)\n- Vibrant overhead flat-lay of colorful Indian dishes — curries, naan, biryani, and chutneys arranged on a dark wooden surface with marigold flowers as garnish (food-spread-banner.dim_1400x600.png)\n- Warm-toned illustration of an elegant Indian restaurant interior with ornate lanterns, rich tapestry walls, and candlelit tables (restaurant-ambiance.dim_1200x800.png)\n- Circular Indian Garden restaurant logo badge with paisley border in gold and saffron on ivory background (restaurant-logo.dim_300x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-rich-homepage-with-a-full-screen-hero-section-featuring-the-restaurant-name-indian-garden-a-tagline-and-a-call-to-action-button-view-menu-reserve-a-table-the-hero-should-use-warm-indian-inspired-colors-saffron-turmeric-gold-deep-crimson-ivory-and-decorative-motifs-paisley-mandala-patterns-rendered-via-css-or-svg-include-a-sticky-navigation-bar-with-links-to-menu-about-and-contact-sections",
+      "title": "Create a visually rich homepage with a full-screen hero section featuring the restaurant name 'Indian Garden', a tagline, and a call-to-action button ('View Menu' / 'Reserve a Table'). The hero should use warm Indian-inspired colors (saffron, turmeric gold, deep crimson, ivory) and decorative motifs (paisley, mandala patterns) rendered via CSS or SVG. Include a sticky navigation bar with links to Menu, About, and Contact sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-menu-section-showcasing-food-categories-e-g-appetizers-breads-vegetarian-entrees-non-vegetarian-entrees-biryanis-desserts-drinks-sourced-from-the-original-site-at-http-www-indiangardenchicago-com-each-menu-item-card-should-display-the-dish-name-description-and-price-cards-should-use-a-warm-card-design-with-subtle-gold-borders-and-indian-inspired-typography",
+      "title": "Build a Menu section showcasing food categories (e.g., Appetizers, Breads, Vegetarian Entrees, Non-Vegetarian Entrees, Biryanis, Desserts, Drinks) sourced from the original site at http://www.indiangardenchicago.com/. Each menu item card should display the dish name, description, and price. Cards should use a warm card design with subtle gold borders and Indian-inspired typography.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-story-section-describing-indian-garden-chicago-s-history-and-culinary-philosophy-include-a-warm-narrative-about-authentic-indian-cuisine-the-restaurant-s-founding-story-and-its-chicago-presence-style-with-an-elegant-side-by-side-layout-using-a-decorative-image-placeholder-and-text",
+      "title": "Build an About / Story section describing Indian Garden Chicago's history and culinary philosophy. Include a warm narrative about authentic Indian cuisine, the restaurant's founding story, and its Chicago presence. Style with an elegant side-by-side layout using a decorative image placeholder and text.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-info-section-displaying-restaurant-address-68-w-washington-chicago-il-phone-number-operating-hours-for-each-day-of-the-week-and-an-embedded-google-maps-iframe-for-the-location-style-with-a-warm-indian-themed-card-layout-and-decorative-dividers",
+      "title": "Build a Contact & Info section displaying: restaurant address (68 W. Washington, Chicago, IL), phone number, operating hours for each day of the week, and an embedded Google Maps iframe for the location. Style with a warm Indian-themed card layout and decorative dividers.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-indian-art-inspired-visual-theme-site-wide-use-a-warm-color-palette-of-saffron-ff9933-turmeric-gold-d4a017-deep-crimson-8b0000-and-ivory-fffaf0-as-primary-colors-typography-should-use-an-elegant-serif-font-for-headings-e-g-playfair-display-and-a-clean-sans-serif-for-body-text-include-decorative-section-dividers-using-mandala-or-floral-svg-patterns-and-subtle-texture-overlays-to-evoke-indian-textile-aesthetics",
+      "title": "Apply a cohesive Indian art-inspired visual theme site-wide. Use a warm color palette of saffron (#FF9933), turmeric gold (#D4A017), deep crimson (#8B0000), and ivory (#FFFAF0) as primary colors. Typography should use an elegant serif font for headings (e.g., Playfair Display) and a clean sans-serif for body text. Include decorative section dividers using mandala or floral SVG patterns, and subtle texture overlays to evoke Indian textile aesthetics.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-footer-with-the-restaurant-logo-text-quick-navigation-links-social-media-placeholder-icons-address-and-a-copyright-line-style-with-a-deep-crimson-or-dark-saffron-background-with-ivory-text",
+      "title": "Create a footer with the restaurant logo text, quick navigation links, social media placeholder icons, address, and a copyright line. Style with a deep crimson or dark saffron background with ivory text.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-the-following-static-image-assets-for-use-in-the-website-and-place-them-in-frontend-public-assets-generated-a-decorative-mandala-hero-background-a-food-spread-banner-and-a-restaurant-ambiance-illustration",
+      "title": "Generate the following static image assets for use in the website and place them in frontend/public/assets/generated: a decorative mandala hero background, a food spread banner, and a restaurant ambiance illustration.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Modern Indian-themed homepage with rich cultural aesthetics and hero section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Menu showcase page displaying food items with Indian-inspired design",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Restaurant info section (location, hours, contact)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Overall Indian art and color theme applied site-wide",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Create a backend actor in Motoko to store and serve restaurant data including: menu items (name, description, price, category), restaurant info (address, phone, hours), and a list of specialties or featured dishes. Expose query functions for retrieving this data.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Indian Garden Chicago",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

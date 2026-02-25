@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko actor defining a restaurant backend with stable storage for menu items, restaurant info, and specialties, exposing CRUD and query methods for each.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (homepage hero, menu section, about section, contact section) to their source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON dictionary providing one-sentence summaries of each frontend source file for build planning reference.",
+  "frontend/index.css": "Base Tailwind CSS entry point defining OKLCH CSS custom properties for the light and dark color themes used by shadcn-ui components.",
+  "frontend/index.html": "Minimal HTML shell titled 'Indian Garden Chicago' that mounts the React app via a root div and a module script pointing to main.tsx.",
+  "frontend/src/App.tsx": "Root React component that composes the full single-page site by rendering Navigation, Hero, Menu, About, Contact, and Footer with SectionDividers between content sections.",
+  "frontend/src/components/About.tsx": "Two-column About section with a restaurant ambiance image, a '40+ Years' badge overlay, narrative history text, and a four-item feature highlights grid.",
+  "frontend/src/components/Contact.tsx": "Contact section that fetches restaurant info from the backend (with fallback data), displays address, phone, hours, and email cards, and embeds a Google Maps iframe.",
+  "frontend/src/components/Footer.tsx": "Deep crimson footer with restaurant branding, social media icon links, smooth-scroll quick nav links, and contact address/phone details.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section for Indian Garden restaurant with a background image, gradient overlay, decorative mandala elements, specialty badges fetched from the backend, and CTA buttons that smooth-scroll to the menu and contact sections.",
+  "frontend/src/components/Menu.tsx": "Menu section that fetches and displays menu items grouped by category with filterable tab buttons, a defined category order with icons, and a skeleton loading state.",
+  "frontend/src/components/MenuItemCard.tsx": "Card component that renders a single menu item's name, description, and price with gold corner accents and hover styling.",
+  "frontend/src/components/Navigation.tsx": "Fixed top navigation bar with scroll-aware background, smooth-scroll links to page sections, a reserve button, and a collapsible mobile menu.",
+  "frontend/src/components/SectionDivider.tsx": "Decorative SVG divider component featuring a center mandala, lotus petals, diamonds, and horizontal lines, with an optional horizontal flip prop.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an ICP backend actor (anonymous or authenticated) based on the current Internet Identity, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider context and useInternetIdentity hook for managing DFINITY AuthClient login, logout, and identity state with status tracking.",
+  "frontend/src/hooks/useQueries.ts": "Defines React Query hooks (useMenuItems, useRestaurantInfo, useSpecialties) that fetch data from the backend actor, each enabled only when the actor is ready.",
+  "frontend/src/index.css": "Global CSS file that defines an Indian Garden color palette using OKLCH CSS variables (saffron, gold, crimson, ivory), imports Playfair Display and Lato fonts, and sets up Tailwind base/component/utility layers with light and dark theme tokens.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider (React Query) and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with the Indian Garden OKLCH color palette, custom fonts (Playfair Display, Lato), border radii, box shadows, and animation keyframes, plus typography, container-queries, and animate plugins.",
+  "project_state.json": "Project state manifest (version 3) describing the goal of revamping the Indian Garden Chicago restaurant website into a modern React site, listing existing features, image requirements, architectural notes, and tracked feature IDs."
+}

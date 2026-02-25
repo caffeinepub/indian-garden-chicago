@@ -1,0 +1,144 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-visually-rich-homepage-with-a-full-screen-hero-section-featuring-the-restaurant-name-indian-garden-a-tagline-and-a-call-to-action-button-view-menu-reserve-a-table-the-hero-should-use-warm-indian-inspired-colors-saffron-turmeric-gold-deep-crimson-ivory-and-decorative-motifs-paisley-mandala-patterns-rendered-via-css-or-svg-include-a-sticky-navigation-bar-with-links-to-menu-about-and-contact-sections",
+      "featureTitle": "Create a visually rich homepage with a full-screen hero section featuring the restaurant name 'Indian Garden', a tagline, and a call-to-action button ('View Menu' / 'Reserve a Table'). The hero should use warm Indian-inspired colors (saffron, turmeric gold, deep crimson, ivory) and decorative motifs (paisley, mandala patterns) rendered via CSS or SVG. Include a sticky navigation bar with links to Menu, About, and Contact sections.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navigation.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-menu-section-showcasing-food-categories-e-g-appetizers-breads-vegetarian-entrees-non-vegetarian-entrees-biryanis-desserts-drinks-sourced-from-the-original-site-at-http-www-indiangardenchicago-com-each-menu-item-card-should-display-the-dish-name-description-and-price-cards-should-use-a-warm-card-design-with-subtle-gold-borders-and-indian-inspired-typography",
+      "featureTitle": "Build a Menu section showcasing food categories (e.g., Appetizers, Breads, Vegetarian Entrees, Non-Vegetarian Entrees, Biryanis, Desserts, Drinks) sourced from the original site at http://www.indiangardenchicago.com/. Each menu item card should display the dish name, description, and price. Cards should use a warm card design with subtle gold borders and Indian-inspired typography.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Menu.tsx",
+        "frontend/src/components/MenuItemCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-an-about-story-section-describing-indian-garden-chicago-s-history-and-culinary-philosophy-include-a-warm-narrative-about-authentic-indian-cuisine-the-restaurant-s-founding-story-and-its-chicago-presence-style-with-an-elegant-side-by-side-layout-using-a-decorative-image-placeholder-and-text",
+      "featureTitle": "Build an About / Story section describing Indian Garden Chicago's history and culinary philosophy. Include a warm narrative about authentic Indian cuisine, the restaurant's founding story, and its Chicago presence. Style with an elegant side-by-side layout using a decorative image placeholder and text.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/About.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-contact-info-section-displaying-restaurant-address-68-w-washington-chicago-il-phone-number-operating-hours-for-each-day-of-the-week-and-an-embedded-google-maps-iframe-for-the-location-style-with-a-warm-indian-themed-card-layout-and-decorative-dividers",
+      "featureTitle": "Build a Contact & Info section displaying: restaurant address (68 W. Washington, Chicago, IL), phone number, operating hours for each day of the week, and an embedded Google Maps iframe for the location. Style with a warm Indian-themed card layout and decorative dividers.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-cohesive-indian-art-inspired-visual-theme-site-wide-use-a-warm-color-palette-of-saffron-ff9933-turmeric-gold-d4a017-deep-crimson-8b0000-and-ivory-fffaf0-as-primary-colors-typography-should-use-an-elegant-serif-font-for-headings-e-g-playfair-display-and-a-clean-sans-serif-for-body-text-include-decorative-section-dividers-using-mandala-or-floral-svg-patterns-and-subtle-texture-overlays-to-evoke-indian-textile-aesthetics",
+      "featureTitle": "Apply a cohesive Indian art-inspired visual theme site-wide. Use a warm color palette of saffron (#FF9933), turmeric gold (#D4A017), deep crimson (#8B0000), and ivory (#FFFAF0) as primary colors. Typography should use an elegant serif font for headings (e.g., Playfair Display) and a clean sans-serif for body text. Include decorative section dividers using mandala or floral SVG patterns, and subtle texture overlays to evoke Indian textile aesthetics.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SectionDivider.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-footer-with-the-restaurant-logo-text-quick-navigation-links-social-media-placeholder-icons-address-and-a-copyright-line-style-with-a-deep-crimson-or-dark-saffron-background-with-ivory-text",
+      "featureTitle": "Create a footer with the restaurant logo text, quick navigation links, social media placeholder icons, address, and a copyright line. Style with a deep crimson or dark saffron background with ivory text.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-generate-the-following-static-image-assets-for-use-in-the-website-and-place-them-in-frontend-public-assets-generated-a-decorative-mandala-hero-background-a-food-spread-banner-and-a-restaurant-ambiance-illustration",
+      "featureTitle": "Generate the following static image assets for use in the website and place them in frontend/public/assets/generated: a decorative mandala hero background, a food spread banner, and a restaurant ambiance illustration.",
+      "files": [
+        "frontend/src/components/About.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

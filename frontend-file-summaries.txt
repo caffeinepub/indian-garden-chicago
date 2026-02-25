@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component that assembles the full single-page restaurant website with Navigation, Hero, Menu, About, Contact sections separated by decorative SectionDividers, and a Footer.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching menu items, restaurant info, and specialties from the backend actor, with proper enabled conditions and query keys.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar with scroll-aware background transition, smooth-scroll links to page sections, mobile hamburger menu, and Indian Garden branding with gold/crimson/ivory palette.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with mandala background image, gradient overlay, restaurant name in Playfair Display, tagline, specialty badges from backend, and dual CTA buttons.",
+  "frontend/src/components/SectionDivider.tsx": "Decorative SVG divider component featuring a mandala center with lotus petals and diamond accents in gold tones, with optional horizontal flip.",
+  "frontend/src/components/MenuItemCard.tsx": "Individual menu item card displaying dish name, description, and price with gold corner accents and crimson/gold typography on a white background.",
+  "frontend/src/components/Menu.tsx": "Full menu section fetching items from backend, grouping by category, rendering filterable category tabs and a responsive grid of MenuItemCards with loading skeletons.",
+  "frontend/src/components/About.tsx": "Two-column about section with restaurant ambiance image, 40+ years badge overlay, narrative text about Indian Garden's history, feature highlights grid, and a food spread banner quote.",
+  "frontend/src/components/Contact.tsx": "Contact section displaying address, phone, email, and hours cards fetched from backend (with fallback data), an embedded Google Maps iframe, and a reservation CTA banner.",
+  "frontend/src/components/Footer.tsx": "Deep crimson footer with restaurant logo, brand description, social media icons, quick nav links, contact info, copyright line, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/index.css": "Global stylesheet importing Playfair Display and Lato fonts, defining the full Indian-themed OKLCH color system (saffron, gold, crimson, ivory), and utility classes for the custom color palette.",
+  "frontend/tailwind.config.js": "Extended Tailwind config adding Playfair Display/Lato font families and the full Indian Garden color palette (saffron, gold, crimson, ivory, warm-cream, warm-gray) as named theme tokens."
+}

@@ -1,0 +1,198 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Modern Indian-Themed Restaurant Website for Indian Garden Chicago",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a visually rich homepage with full-screen hero section featuring Indian Garden branding, tagline, call-to-action buttons, and sticky navigation bar with warm Indian-inspired colors and decorative motifs",
+      "acceptanceCriteria": [
+        "Hero section is full-viewport height with the restaurant name and tagline prominently displayed",
+        "Sticky navigation bar is present and links scroll smoothly to respective sections",
+        "Color palette uses saffron, gold, deep crimson, and ivory tones consistently",
+        "Decorative Indian motifs (mandala/paisley) appear in the hero and section dividers"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add main page structure with hero section, navigation bar, and section containers for Menu, About, and Contact. Implement smooth scrolling navigation. Wire the generated hero background image frontend/public/assets/generated/hero-mandala-bg.dim_1920x1080.png as the hero section background."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero component with full-screen section displaying 'Indian Garden' restaurant name, tagline, and call-to-action buttons ('View Menu' / 'Reserve a Table'). Use the generated mandala background image frontend/public/assets/generated/hero-mandala-bg.dim_1920x1080.png. Apply warm Indian color palette (saffron, turmeric gold, deep crimson, ivory) and include decorative SVG mandala or paisley motifs rendered via CSS."
+        },
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "create",
+          "description": "Create sticky Navigation component with links to Menu, About, and Contact sections. Implement smooth scroll behavior when links are clicked. Style with Indian-inspired colors and ensure it remains visible on scroll."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global CSS custom properties for the Indian color palette (saffron #FF9933, turmeric gold #D4A017, deep crimson #8B0000, ivory #FFFAF0). Import Playfair Display font for headings and configure base typography styles."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build a Menu section showcasing food categories with menu item cards displaying dish name, description, and price using warm card design with gold borders and Indian-inspired typography",
+      "acceptanceCriteria": [
+        "Menu is organized into clearly labeled food categories",
+        "Each menu item shows name, description, and price",
+        "Menu items are displayed as styled cards with gold accent borders",
+        "Category tabs or section headings allow easy navigation between food types"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Menu.tsx",
+          "operation": "create",
+          "description": "Create Menu component that fetches menu items from the backend using getMenuItems(). Organize items by category (Appetizers, Breads, Vegetarian Entrees, Non-Vegetarian Entrees, Biryanis, Desserts, Drinks). Render category section headings and display menu items as styled cards with dish name, description, and price. Apply warm card design with subtle gold borders and Indian-inspired typography."
+        },
+        {
+          "path": "frontend/src/components/MenuItemCard.tsx",
+          "operation": "create",
+          "description": "Create MenuItemCard component to display individual menu item with name, description, and price. Style with warm colors, gold accent borders, and elegant typography consistent with the Indian theme."
+        },
+        {
+          "path": "frontend/src/hooks/useMenuItems.ts",
+          "operation": "create",
+          "description": "Create custom hook to fetch menu items from the backend actor using the getMenuItems() method. Handle loading and error states. Group returned items by category for easy rendering."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Menu component into the main page structure with proper section anchor for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build an About section describing Indian Garden Chicago's history and culinary philosophy with elegant side-by-side layout using decorative image and text",
+      "acceptanceCriteria": [
+        "About section contains a narrative about the restaurant's story and cuisine philosophy",
+        "Section uses a two-column layout (image + text) on desktop, stacks vertically on mobile",
+        "Design is consistent with the overall Indian art and color theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "create",
+          "description": "Create About component with side-by-side layout (two-column on desktop, stacked on mobile) displaying restaurant story, history, and culinary philosophy. Use the generated image frontend/public/assets/generated/food-spread-banner.dim_1400x600.png or frontend/public/assets/generated/restaurant-ambiance.dim_1200x800.png as a decorative visual element. Style with warm Indian colors and elegant typography."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the About component into the main page structure with proper section anchor for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build a Contact section displaying restaurant address, phone number, operating hours, and embedded Google Maps with warm Indian-themed card layout",
+      "acceptanceCriteria": [
+        "Address, phone number, and hours are clearly displayed",
+        "Operating hours are shown per day in a readable format",
+        "Google Maps embed shows the restaurant location",
+        "Section styling matches the overall site theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact component that fetches restaurant info from backend using getRestaurantInfo(). Display address (68 W. Washington, Chicago, IL), phone number, and operating hours in a warm Indian-themed card layout with decorative dividers. Include embedded Google Maps iframe for the restaurant location. Ensure responsive design and consistent styling."
+        },
+        {
+          "path": "frontend/src/hooks/useRestaurantInfo.ts",
+          "operation": "create",
+          "description": "Create custom hook to fetch restaurant information from the backend actor using the getRestaurantInfo() method. Handle loading and error states."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Contact component into the main page structure with proper section anchor for navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply cohesive Indian art-inspired visual theme site-wide with warm color palette, elegant typography, decorative SVG section dividers, and subtle texture overlays",
+      "acceptanceCriteria": [
+        "Saffron, gold, crimson, and ivory color palette is used consistently across all sections",
+        "Playfair Display (or equivalent elegant serif) is applied to all headings",
+        "Decorative SVG section dividers with Indian motifs appear between major sections",
+        "Site is fully responsive and looks polished on mobile, tablet, and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define comprehensive Indian-themed design system with CSS custom properties for saffron (#FF9933), turmeric gold (#D4A017), deep crimson (#8B0000), and ivory (#FFFAF0). Import and configure Playfair Display font for headings and clean sans-serif for body text. Add base styles for typography hierarchy, spacing, and subtle texture overlays to evoke Indian textile aesthetics."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom Indian color palette (saffron, turmeric-gold, crimson, ivory). Configure font families to use Playfair Display for headings and default sans-serif for body. Add custom spacing and decorative utilities if needed."
+        },
+        {
+          "path": "frontend/src/components/SectionDivider.tsx",
+          "operation": "create",
+          "description": "Create SectionDivider component with decorative SVG mandala or floral patterns to place between major sections. Style with Indian color palette and ensure responsiveness."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Place SectionDivider components between Hero, Menu, About, and Contact sections to provide visual separation with Indian motifs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create footer with restaurant logo text, quick navigation links, social media placeholder icons, address, and copyright line styled with deep crimson background and ivory text",
+      "acceptanceCriteria": [
+        "Footer includes restaurant name, quick nav links, address, and copyright",
+        "Footer background uses a deep, rich color contrasting with ivory text",
+        "Footer is present on all pages/sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create Footer component with restaurant logo text, quick navigation links (Menu, About, Contact), social media placeholder icons, address, and copyright line. Style with deep crimson or dark saffron background and ivory text. Use the generated logo image frontend/public/assets/generated/restaurant-logo.dim_300x300.png if appropriate."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the Footer component at the bottom of the main page structure to ensure it appears on all sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Wire generated static image assets into the website UI as frontend assets",
+      "acceptanceCriteria": [
+        "Hero section uses the mandala background image",
+        "About or featured section uses the food spread banner",
+        "Images are responsive and load correctly from frontend/public/assets/generated"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Ensure Hero component uses the generated mandala background image frontend/public/assets/generated/hero-mandala-bg.dim_1920x1080.png as the hero section background. Verify responsive behavior and proper loading."
+        },
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "modify",
+          "description": "Ensure About component uses the generated food spread banner frontend/public/assets/generated/food-spread-banner.dim_1400x600.png or restaurant ambiance image frontend/public/assets/generated/restaurant-ambiance.dim_1200x800.png as a decorative visual. Verify responsive behavior and proper loading."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Optionally use the generated restaurant logo frontend/public/assets/generated/restaurant-logo.dim_300x300.png in the footer branding if appropriate. Verify responsive behavior and proper loading."
+        }
+      ]
+    }
+  ]
+}
